@@ -3,7 +3,7 @@ import Image from "next/image"
 
 const HomeEventCard = ({ evt }) => {
 	return (
-		<Link key={evt.id} href={`/events/${evt.id}`} passHref legacyBehavior>
+		<Link key={evt.id} href={`/events/${evt.id}`} passHref>
 			<a>
 				<div className="img__container">
 					<Image src={evt.image} width={"450"} height={"300"} alt={evt.title} unoptimized/>
